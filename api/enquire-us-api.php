@@ -23,8 +23,8 @@ $data = json_decode( file_get_contents('php://input'),true );
     // $mail->Host = "smtp.hostinger.com";
     // $mail->Port = 465; // or 587
     $mail->IsHTML(true);
-    // $mail->Username = "info@simulacruminc.com";
-    // $mail->Password = "Strangerthings1@kgf";
+    // $mail->Username = "sonisaini901@gmail.com";
+    // $mail->Password = "******";
 
 
     $mail->From = "sonisaini901@gmail.com";
