@@ -2,7 +2,7 @@
 // Database credentials
 $servername = "sql303.ezyro.com";
 $username = "ezyro_41185195";
-$password = "soni@123!#";
+$password = "56deae6";
 $dbname = "ezyro_41185195_portfolio";
 
 // 1. Create connection
