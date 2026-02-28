@@ -15,17 +15,17 @@
                         <div class="col-md-3 col-pb-sm">
                             <h2>Social</h2>
                             <p class="portfolio-social-icons">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                                <a href="mailto:sonisaini901@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="https://github.com/sonisaini901/" target="_blank"><i class="fa-brands fa-github"></i></a>
+								<a href="https://www.linkedin.com/in/soni-saini-744576205" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+								<a href="https://t.me/sonisaini901" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+								<a href="mailto:sonisaini901@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                             </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <p class="footer-copyright">
-                                &copy; Copyright &copy;<?php echo date("Y"); ?>. Made by <a href="/">Soni Saini</a>
+                                &copy; Copyright &copy;<?php echo date("Y"); ?>. Made by <a href="/">Soni</a>
                             </p>
                         </div>
                     </div>

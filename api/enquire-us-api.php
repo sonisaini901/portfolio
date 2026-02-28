@@ -28,7 +28,7 @@ $data = json_decode( file_get_contents('php://input'),true );
 
 
     $mail->From = "sonisaini901@gmail.com";
-    $mail->FromName = "Soni Saini";
+    $mail->FromName = "Soni";
 
 
     $mail->addAddress("sonisaini901@gmail.com");

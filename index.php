@@ -1,6 +1,10 @@
 <!-- Header -->
-<?php include('header.php'); ?>
+<?php include('header.php'); 
 
+$sql = "SELECT * FROM projects LIMIT 4";
+$result = $conn->query($sql);
+
+?>
     <!-- About Section -->
     <section id="portfolio-about">
 		<div class="container">
@@ -21,16 +25,16 @@
 				<div class="col-md-6 col-md-push-1 animate-box">
 					<div class="about-desc">
 						<h2>
-							<span>Hey I'm Soni Saini<span>
+							<span>Hey I'm Soni<span>
 							<span>Sr. Software Developer</span>
 						</h2>
 						</div>
 						<div class="desc">
 							<p>I'm a Senior Software Developer who loves building smart and efficient solutions. I focus on creating scalable systems and writing clean, easy-to-maintain code using the latest technologies. Let's work together to bring your ideas to life with practical and effective software.</p>
 							<p class="portfolio-social-icons">
-								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-								<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-								<a href="#"><i class="fa-brands fa-telegram"></i></a>
+								<a href="https://github.com/sonisaini901/" target="_blank"><i class="fa-brands fa-github"></i></a>
+								<a href="https://www.linkedin.com/in/soni-saini-744576205" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+								<a href="https://t.me/sonisaini901" target="_blank"><i class="fa-brands fa-telegram"></i></a>
 								<a href="mailto:sonisaini901@gmail.com"><i class="fa-solid fa-envelope"></i></a>
 							</p>
 						    <p><a href="/contact" class="btn btn-primary">Contact Me!</a></p>
@@ -126,74 +130,28 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
-					<div class="work-entry animate-box">
-						<a href="work" class="work-img" style="background-image: url(images/iosandweb.webp);">
-							<div class="display-t">
-								<div class="work-name">
-									<h2>IosAndWeb Technologies</h2>
+				<?php if ($result->num_rows > 0) { 
+					while ($row = $result->fetch_assoc()) {
+				?>
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<a href="work" class="work-img" style="background-image: url(images/<?php echo $row["image"]; ?>);">
+								<div class="display-t">
+									<div class="work-name">
+										<h2><?php echo $row["title"]; ?></h2>
+									</div>
 								</div>
-							</div>
-						</a>
-						<div class="col-md-12">
-							<div class="desc">
-								<p>This website, developed by me using React.js, offers a smooth and interactive user experience with a responsive design. It effectively showcases the company's services and projects, ensuring easy navigation across all devices.</p>
-								<p class="read"><a href="#">View details</a></p>
+							</a>
+							<div class="col-md-12">
+								<div class="desc">
+									<p><?php echo $row["excerpt"]; ?></p>
+									<p class="read"><a href="#">View details</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="work-entry animate-box">
-						<a href="work" class="work-img" style="background-image: url(images/vamanaresidences.webp);">
-							<div class="display-t">
-								<div class="work-name">
-									<h2>Vamana Residences</h2>
-								</div>
-							</div>
-						</a>
-						<div class="col-md-12">
-							<div class="desc">
-								<p>The Vamana Residences project, developed by me using React.js, offers a modern and user-friendly interface for showcasing residential offerings. It provides an optimized, smooth experience for users on any device.</p>
-								<p class="read"><a href="#">View Details</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="work-entry animate-box">
-						<a href="work" class="work-img" style="background-image: url(images/freshorganicgrocery.webp);">
-							<div class="display-t">
-								<div class="work-name">
-									<h2>Fresh Organic Grocery</h2>
-								</div>
-							</div>
-						</a>
-						<div class="col-md-12">
-							<div class="desc">
-								<p>The Organic Grocery Store website, built with React.js and Node.js for admin and user interfaces, provides a smooth and efficient browsing experience. It ensures seamless management and fast navigation.</p>
-								<p class="read"><a href="#">View details</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="work-entry animate-box">
-						<a href="work" class="work-img" style="background-image: url(images/shipfromgermany.webp);">
-							<div class="display-t">
-								<div class="work-name">
-									<h2>Ship From Germany</h2>
-								</div>
-							</div>
-						</a>
-						<div class="col-md-12">
-							<div class="desc">
-								<p>The blogging website, created by me using WordPress, offers a clean and engaging platform for sharing articles and content. It features an easy-to-navigate interface and responsive design for an enhanced user experience.</p>
-								<p class="read"><a href="#">View details</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
+				<?php }
+				} ?>
 			</div>
 		</div>
 	</section>

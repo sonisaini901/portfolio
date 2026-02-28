@@ -1,9 +1,16 @@
+<?php include('database.php'); 
+
+$sqlwork = "SELECT * FROM projects LIMIT 4";
+$resultwork = $conn->query($sqlwork);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sr. Software Developer</title>
+	<link rel="icon" href="/images/favicon.ico" type="image/png">
 
     <link href="https://fonts.googleapis.com/css?family=Karla:400,500,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
@@ -48,18 +55,15 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h2 class="head-title">Works</h2>
-						<a href="images/iosandweb.webp" class="gallery image-popup-link text-center" style="background-image: url(images/iosandweb.webp);">
+
+						<?php if ($resultwork->num_rows > 0) { 
+							while ($workrow = $resultwork->fetch_assoc()) {
+						?>
+						<a href="images/<?php echo $workrow["image"]; ?>" class="gallery image-popup-link text-center" style="background-image: url(images/<?php echo $workrow["image"]; ?>);">
 							<span><i class="fa-solid fa-magnifying-glass"></i></span>
 						</a>
-						<a href="images/vamanaresidences.webp" class="gallery image-popup-link text-center" style="background-image: url(images/vamanaresidences.webp);">
-							<span><i class="fa-solid fa-magnifying-glass"></i></span>
-						</a>
-						<a href="images/freshorganicgrocery.webp" class="gallery image-popup-link text-center" style="background-image: url(images/freshorganicgrocery.webp);">
-							<span><i class="fa-solid fa-magnifying-glass"></i></span>
-						</a>
-						<a href="images/shipfromgermany.webp" class="gallery image-popup-link text-center" style="background-image: url(images/shipfromgermany.webp);">
-							<span><i class="fa-solid fa-magnifying-glass"></i></span>
-						</a>
+						<?php }
+						} ?>
 					</div>
 				</div>
 			</div>

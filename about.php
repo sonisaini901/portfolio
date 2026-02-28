@@ -13,15 +13,15 @@
 				<div class="col-md-6 col-md-push-1 animate-box">
 					<div class="about-desc">
 						<h2>
-							<span>Hey I'm Soni Saini<span>
+							<span>Hey I'm Soni<span>
 							<span>Sr. Software Developer</span>
 						</h2>
 						<div class="desc">
 							<p>I'm a dedicated Senior Software Developer with a knack for turning complex challenges into simple, effective solutions. With expertise in various technologies and a strong focus on delivering high-quality code, I aim to build seamless and scalable applications. My goal is to continuously learn, grow, and create impactful software that makes a difference.</p>
 							<p class="portfolio-social-icons">
-								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-								<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-								<a href="#"><i class="fa-brands fa-telegram"></i></a>
+								<a href="https://github.com/sonisaini901/" target="_blank"><i class="fa-brands fa-github"></i></a>
+								<a href="https://www.linkedin.com/in/soni-saini-744576205" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+								<a href="https://t.me/sonisaini901" target="_blank"><i class="fa-brands fa-telegram"></i></a>
 								<a href="mailto:sonisaini901@gmail.com"><i class="fa-solid fa-envelope"></i></a>
 							</p>
 							<p><a href="/work" class="btn btn-primary">View My Works</a></p>

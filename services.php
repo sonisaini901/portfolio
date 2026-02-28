@@ -123,7 +123,7 @@
 		        </div>
 
 		        <div class="col-lg-3 col-sm-6 text-center">
-		         	<h2 class="progress-head">Databases & Version Control</h2>
+		         	<h2 class="progress-head">Databases Control</h2>
 		            <div class="progress green">
 		                <span class="progress-left">
 		                    <span class="progress-bar"></span>
