@@ -11,3 +11,9 @@ RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
 # Optional: Force trailing slash removal (e.g., /about/ → /about)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# /work → work.php
+RewriteRule ^work/?$ work.php [L]
+
+# /work/slug → work-single.php?slug=slug
+RewriteRule ^work/([a-zA-Z0-9-]+)/?$ work-single.php?slug=$1 [L,QSA]

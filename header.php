@@ -16,23 +16,23 @@ $resultwork = $conn->query($sqlwork);
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
     <!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="/css/animate.min.css">
     <!-- Fontawesome Icon Fonts-->
-	<link href="fonts/icons/css/fontawesome.css" rel="stylesheet" />
-	<link href="fonts/icons/css/brands.css" rel="stylesheet" />
-	<link href="fonts/icons/css/solid.css" rel="stylesheet" />
+	<link href="/fonts/icons/css/fontawesome.css" rel="stylesheet" />
+	<link href="/fonts/icons/css/brands.css" rel="stylesheet" />
+	<link href="/fonts/icons/css/solid.css" rel="stylesheet" />
     <!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="/css/bootstrap.css">
     <!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.default.css">
+	<link rel="stylesheet" href="/css/owl.carousel.css">
+	<link rel="stylesheet" href="/css/owl.theme.default.css">
     <!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="/css/magnific-popup.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="/js/modernizr-2.6.2.min.js"></script>
 
 </head>
 <body>
@@ -45,10 +45,10 @@ $resultwork = $conn->query($sqlwork);
 					<div class="col-md-12">
 						<ul>
 							<li class="active"><a href="/">Home</a></li>
-							<li><a href="about">About</a></li>
-							<li><a href="services">Services</a></li>
-							<li><a href="work">Work</a></li>
-							<li><a href="contact">Contact</a></li>
+							<li><a href="/about">About</a></li>
+							<li><a href="/services">Services</a></li>
+							<li><a href="/work">Work</a></li>
+							<li><a href="/contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -59,7 +59,7 @@ $resultwork = $conn->query($sqlwork);
 						<?php if ($resultwork->num_rows > 0) { 
 							while ($workrow = $resultwork->fetch_assoc()) {
 						?>
-						<a href="images/<?php echo $workrow["image"]; ?>" class="gallery image-popup-link text-center" style="background-image: url(images/<?php echo $workrow["image"]; ?>);">
+						<a href="/images/<?php echo $workrow["image"]; ?>" class="gallery image-popup-link text-center" style="background-image: url(/images/<?php echo $workrow["image"]; ?>);">
 							<span><i class="fa-solid fa-magnifying-glass"></i></span>
 						</a>
 						<?php }

@@ -23,7 +23,7 @@ $result = $conn->query($sql);
 				?>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="/work-single" class="work-img" style="background-image: url(images/<?php echo $row["image"]; ?>);">
+							<a href="/work/<?php echo htmlspecialchars($row['url']); ?>" class="work-img" style="background-image: url(images/<?php echo $row["image"]; ?>);">
 								<div class="display-t">
 									<div class="work-name">
 										<h2><?php echo $row["title"]; ?></h2>
@@ -33,7 +33,7 @@ $result = $conn->query($sql);
 							<div class="col-md-12">
 								<div class="desc">
 									<p><?php echo $row["excerpt"]; ?></p>
-									<p class="read"><a href="#">View details</a></p>
+									<p class="read"><a href="/work/<?php echo htmlspecialchars($row['url']); ?>">View details</a></p>
 								</div>
 							</div>
 						</div>
