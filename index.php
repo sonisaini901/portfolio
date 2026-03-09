@@ -37,7 +37,6 @@ $result = $conn->query($sql);
 								<a href="https://t.me/sonisaini901" target="_blank"><i class="fa-brands fa-telegram"></i></a>
 								<a href="mailto:sonisaini901@gmail.com"><i class="fa-solid fa-envelope"></i></a>
 							</p>
-						    <p><a href="/contact" class="btn btn-primary">Contact Me!</a></p>
 						</div>
 					</div>
 				</div>
